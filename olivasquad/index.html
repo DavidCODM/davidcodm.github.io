@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/CSS.png">
+    <title>CSS</title>
+</head>
+<body>
+    
+    <br id="home"><br><br>
+    <!-- <==========> HOME <==========> -->
+    <header>CSS (Cascading Style Sheet)</header>
+    <div class="container" >
+
+        <h1 style="
+                display: inline-block;
+                vertical-align: middle;
+            ">Alessandro, Oliva, Orlando<br> Russo e Morabito</h2>
+
+        <img class="image" style="
+                width: 20%;
+                height: 48%;
+                display: inline-block;
+                vertical-align: middle;
+            "src="images/CSS.png">
+
+    </div>
+
+    <br id="cose"><br><br>
+    <!-- <==========> COS'È <==========> -->
+    <header>Cos'è?</header>
+    <div class="container" id="about">
+        <div class="center">
+        <img src="images/html.png" height="200px" width="200px">
+        <img src="images/computerlogo.png" height="200px" width="200px">
+        <img src="images/CSS.png" height="200px" width="200px">
+        </div>
+        <p>
+            CSS è l'acronimo di "Cascading Style Sheets" (fogli di stile a cascata), è un linguaggio utilizzato per descrivere l'aspetto e 
+            la formattazione di un documento HTML. Il CSS si concentra sulla presentazione visuale e sullo stile 
+            di quella pagina. Con il CSS, è possibile definire i colori, i tipi di carattere, le dimensioni, gli sfondi e altri attributi di presentazione 
+            di elementi HTML specifici o di gruppi di elementi.
+        </p>
+        </div>
+    </div>
+
+    <br id="usarlo"><br><br>
+    <!-- <==========> COME USARLO <==========> -->
+    <header>Come si usa?</header>
+    <div class="container">
+        <p style="font-size: 37px !important">
+            Solitamente si utilizza il riferimento tramite ID o classi ai tag dell'HTML;
+            All'interno delle parantesi graffe viene specificato il blocco delle dichiarazioni:
+            ogni dichiarazione è composta da un'accoppiata di proprietà e corrispondente valore;
+            
+            Le direttive sono un particolare costrutto che può essere facilmente riconosciuto in quanto inizia sempre col simbolo della chiocciola "@". 
+            Mediante le direttive vengono compiute determinate operazioni come l'import di un altro foglio di stile, o di un font
+        </p>
+        <img src="images/esempio1.png" style="width: 550px; height: 550px;">
+    </div>
+
+    <br id="selettori"><br><br>
+    <!-- <==========> SELETTORI <==========> -->
+    <header>Classi, ID e Selettori</header>
+    <div class="container" id="selettori">
+        <p>
+            Per indicare cosa stiamo modificando in un foglio sul foglio HTML usiamo una classe, 
+            un id, o un selettore. Andiamo a mettere dentro al tag l'attributo (class="nomeclasse"), oppure (id="nomeid"), 
+                per poi lavorarci nel css scrivendo .nomeclasse{} o #nomeid.{} Il terzo metodo, ovvero coi selettori, consiste nel modificare direttamente il tag, 
+                scrivendo nel CSS nometag{}
+        </p>
+
+        <div class="center">
+            <img src="images/esempio2.png" width="1000px" height="100px">
+        </div>       
+    </div>
+
+    <br><br><br id="implementazione">
+    <!-- <==========> IMPLEMENTAZIONE <==========> -->
+    <header>implementazione con l'HTML</header>
+    <div class="container">
+        <p>
+            Esistono tre tipi di fogli di stile CSS: esterni, interni, in linea.
+            Gli stili esterni sono implementati su un file esterno, spesso chiamato "style.css".
+            Gli stili interni sono implementati su direttamente sulla pagina HTML tramite il tag "style".
+            Gli stili in linea sono implementati direttamente su un tag all'interno della pagina HTML.
+        </p>
+        <img src="images/esempio3.png" height="500px" width="580px">
+
+    </div>
+
+    <br><br><br id="tag">
+    <!-- <==========> TAG <==========> -->
+    <header>Proprietà</header>
+    <div class="container" style="height: 5000px !important; display: block;">
+        <p>Ora che abbiamo capito le basi sul funzionamento del CSS, vediamo alcune delle proprietà fondamentali</p>
+        <u><h2 style="text-align:center">TEXT-ALIGN</h2></u>
+        <p>La proprietà "text-align" serve ad allineare orizzontalmente il testo in base alle nostre necessità,
+            possiamo settarla o a "center" per mettere il testo al centro della pagina, o "left" per metterlo
+            a sinistra, o "right" per metterlo a destra</p>
+        <h3>text-align: center</h3>
+
+        <u><h2 style="text-align:center">WIDTH</h2></u>
+        <p>La proprietà "width" serve a determinare la larghezza di un oggetto</p>
+        <h3>width: 30px</h3>
+
+        <u><h2 style="text-align:center">HEIGHT</h2></u>
+        <p>La proprietà "height" serve a determinare l'altezza di un oggetto</p>
+        <h3>height: 30px</h3>
+
+        <u><h2 style="text-align:center">FONT-SIZE</h2></u>
+        <p>La proprietà "font-size" serve a determinare la dimensione di un testo</p>
+        <h3>font-size: 30px</h3>
+
+        <u><h2 style="text-align:center">BACKGROUND-COLOR / BACKGROUND-IMAGE</h2></u>
+        <p>La proprietà "background-color" serve a specificare di quale colore vogliamo sia lo sfondo
+            di un determinato oggeto oppure dell'intera pagina, mentre "background-image" serve se
+            vogliamo come sfondo un immagine</p>
+        <h3>background-color: green</h3>
+        <h3>background-image: url(images/piuzzo.png)</h3>
+
+        <u><h2 style="text-align:center">COLOR</h2></u>
+        <p>La proprietà "color" serve a deteminare il colore di un testo</p>
+        <h3>color: green</h3>
+
+        <u><h2 style="text-align:center">BORDER</h2></u>
+        <p>La proprietà "border" serve a modificare il colore o lo spessore di un bordo di un qualsiasi
+            oggetto</p>
+        <h3>border: solid green 30px</h3>
+
+        <u><h2 style="text-align:center">FONT-FAMILY</h2></u>
+        <p>La proprietà "font-family" serve a modificare il carattere del testo</p>
+        <h3>font-family: poppins</h3>
+
+        <u><h2 style="text-align:center">CURSOR</h2></u>
+        <p>La proprietà "cursor" serve a speficiare quale cursore useremo quando il puntatore sarà
+            posizionato sopra un determinato blocco</p>
+        <h3>curosr: pointer</h3>
+
+        <u><h2 style="text-align:center">TEXT-SHADOW / BOX-SHADOW</h2></u>
+        <p>La proprietà "text-shadow" serve a modificare il colore e l'intensità di un ombra di un testo
+            mentre "box-shadow" l'ombra di un qualsiasi blocco</p>
+        <h3>text-shadow: 30px black</h3>
+        <h3>box-shadow: 30px black</h3>
+
+        <u><h2 style="text-align:center">BORDER-RADIUS</h2></u>
+        <p>La proprietà "border-radius" serve ad arrotondare i bordi di un blocco</p>
+        <h3>border-radius: 25px</h3>
+
+    </div>
+
+    <!-- <==========> TOOLBAR <==========> -->
+    <footer>
+        <img src="images/blank.webp" width="5px" height="1px">
+        <a href="sito.zip" style="text-align: right"><img src="images/download.png" width="50px" height="50px"></a>
+        <a href="#home"><img src="images/link.png" width="50px" height="50px"></a>
+        <a href="#cose"><img src="images/link.png" width="50px" height="50px"></a>
+        <a href="#usarlo"><img src="images/link.png" width="50px" height="50px"></a>
+        <a href="#selettori"><img src="images/link.png" width="50px" height="50px"></a>
+        <a href="#implementazione"><img src="images/link.png" width="50px" height="50px"></a>
+        <a href="#tag"><img src="images/link.png" width="50px" height="50px"></a>
+    </footer>
+</body>
+</html>
